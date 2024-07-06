@@ -50,7 +50,7 @@ public class FramedSlidingDoorMovementBehaviour implements MovementBehaviour {
                 .get(context.localPos);
         if (structureBlockInfo == null)
             return;
-        boolean open = FramedGlassSlidingDoorBlockEntity.isOpen(structureBlockInfo.state);
+        boolean open = FramedGlassSlidingDoorBlockEntity.isOpen(structureBlockInfo.state());
 
         if (!context.world.isClientSide())
             tickOpen(context, open);
@@ -79,26 +79,26 @@ public class FramedSlidingDoorMovementBehaviour implements MovementBehaviour {
 
         StructureTemplate.StructureBlockInfo info = contraption.getBlocks()
                 .get(pos);
-        if (info == null || !info.state.hasProperty(DoorBlock.OPEN))
+        if (info == null || !info.state().hasProperty(DoorBlock.OPEN))
             return;
 
         toggleDoor(pos, contraption, info);
 
         if (shouldOpen)
-            context.world.playSound(null, new BlockPos(context.position), SoundEvents.IRON_DOOR_OPEN,
+            context.world.playSound(null, BlockPos.containing(context.position), SoundEvents.IRON_DOOR_OPEN,
                     SoundSource.BLOCKS, .125f, 1);
     }
 
     private void toggleDoor(BlockPos pos, Contraption contraption, StructureTemplate.StructureBlockInfo info) {
-        BlockState newState = info.state.cycle(DoorBlock.OPEN);
-        contraption.entity.setBlock(pos, new StructureTemplate.StructureBlockInfo(info.pos, newState, info.nbt));
+        BlockState newState = info.state().cycle(DoorBlock.OPEN);
+        contraption.entity.setBlock(pos, new StructureTemplate.StructureBlockInfo(info.pos(), newState, info.nbt()));
 
         BlockPos otherPos = newState.getValue(DoorBlock.HALF) == DoubleBlockHalf.LOWER ? pos.above() : pos.below();
         info = contraption.getBlocks()
                 .get(otherPos);
-        if (info != null && info.state.hasProperty(DoorBlock.OPEN)) {
-            newState = info.state.cycle(DoorBlock.OPEN);
-            contraption.entity.setBlock(otherPos, new StructureTemplate.StructureBlockInfo(info.pos, newState, info.nbt));
+        if (info != null && info.state().hasProperty(DoorBlock.OPEN)) {
+            newState = info.state().cycle(DoorBlock.OPEN);
+            contraption.entity.setBlock(otherPos, new StructureTemplate.StructureBlockInfo(info.pos(), newState, info.nbt()));
             contraption.invalidateColliders();
         }
     }

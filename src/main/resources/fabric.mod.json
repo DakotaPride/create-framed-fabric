@@ -18,6 +18,9 @@
       "net.dakotapride.createframed.CreateFramedMod"
     ]
   },
+
+  "accessWidener": "createframed.accesswidener",
+
   "mixins": [
     "createframed.mixins.json"
   ],
