@@ -33,10 +33,6 @@ repositories {
 	maven { url = "https://maven.tterrag.com/" } // Flywheel
 }
 
-loom {
-	accessWidenerPath = file("src/main/resources/createframed.accesswidener")
-}
-
 configurations.configureEach {
 	resolutionStrategy {
 		force("net.fabricmc:fabric-loader:${fabric_loader_version}")
