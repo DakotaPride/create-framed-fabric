@@ -1,6 +1,25 @@
 {
   "itemGroup.createframed.create_framed": "机械动力：多彩边框",
 
+  // Start v1.5 translations
+
+  "block.createframed.copper_window": "Copper Window",
+  "block.createframed.copper_window_pane": "Copper Window Pane",
+  "block.createframed.zinc_window": "Zinc Window",
+  "block.createframed.zinc_window_pane": "Zinc Window Pane",
+  "block.createframed.brass_window": "Brass Window",
+  "block.createframed.brass_window_pane": "Brass Window Pane",
+  "block.createframed.rose_quartz_window": "Rose Quartz Window",
+  "block.createframed.rose_quartz_window_pane": "Rose Quartz Window Pane",
+  "block.createframed.andesite_alloy_window": "Andesite Alloy Window",
+  "block.createframed.andesite_alloy_window_pane": "Andesite Alloy Window Pane",
+  "block.createframed.industrial_iron_window": "Industrial Iron Window",
+  "block.createframed.industrial_iron_window_pane": "Industrial Iron Window Pane",
+  "block.createframed.emerald_window": "Emerald Window",
+  "block.createframed.emerald_window_pane": "Emerald Window Pane",
+
+  // End
+
   "block.createframed.red_stained_framed_glass": "红色边框玻璃",
   "block.createframed.orange_stained_framed_glass": "橙色边框玻璃",
   "block.createframed.yellow_stained_framed_glass": "黄色边框玻璃",

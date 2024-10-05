@@ -1,0 +1,7 @@
+{
+  "parent": "create:block/connected_glass_pane/side",
+  "textures": {
+    "edge": "createframed:block/copper_window_top",
+    "pane": "createframed:block/copper_window"
+  }
+}

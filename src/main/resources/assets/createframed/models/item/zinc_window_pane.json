@@ -1,0 +1,7 @@
+{
+  "parent": "create:item/pane",
+  "textures": {
+    "edge": "createframed:block/zinc_window_top",
+    "pane": "createframed:block/zinc_window"
+  }
+}

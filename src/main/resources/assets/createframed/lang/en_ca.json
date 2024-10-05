@@ -1,6 +1,21 @@
 {
   "itemGroup.createframed.create_framed": "Create: Framed",
 
+  "block.createframed.copper_window": "Copper Window",
+  "block.createframed.copper_window_pane": "Copper Window Pane",
+  "block.createframed.zinc_window": "Zinc Window",
+  "block.createframed.zinc_window_pane": "Zinc Window Pane",
+  "block.createframed.brass_window": "Brass Window",
+  "block.createframed.brass_window_pane": "Brass Window Pane",
+  "block.createframed.rose_quartz_window": "Rose Quartz Window",
+  "block.createframed.rose_quartz_window_pane": "Rose Quartz Window Pane",
+  "block.createframed.andesite_alloy_window": "Andesite Alloy Window",
+  "block.createframed.andesite_alloy_window_pane": "Andesite Alloy Window Pane",
+  "block.createframed.industrial_iron_window": "Industrial Iron Window",
+  "block.createframed.industrial_iron_window_pane": "Industrial Iron Window Pane",
+  "block.createframed.emerald_window": "Emerald Window",
+  "block.createframed.emerald_window_pane": "Emerald Window Pane",
+
   "block.createframed.red_stained_framed_glass": "Red Stained Framed Glass",
   "block.createframed.orange_stained_framed_glass": "Orange Stained Framed Glass",
   "block.createframed.yellow_stained_framed_glass": "Yellow Stained Framed Glass",

@@ -1,0 +1,8 @@
+{
+  "type": "minecraft:stonecutting",
+  "count": 1,
+  "ingredient": {
+    "tag": "c:glass/lime"
+  },
+  "result": "createframed:horizontal_lime_stained_framed_glass"
+}

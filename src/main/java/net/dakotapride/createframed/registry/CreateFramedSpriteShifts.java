@@ -62,24 +62,31 @@ public class CreateFramedSpriteShifts {
             VERTICAL_WHITE_STAINED_FRAMED_GLASS = vertical("white_stained_framed_glass"),
             VERTICAL_BROWN_STAINED_FRAMED_GLASS = vertical("brown_stained_framed_glass"),
             VERTICAL_TINTED_FRAMED_GLASS = vertical("tinted_framed_glass");
+	public static final CTSpriteShiftEntry
+			COPPER_WINDOW = getCT(AllCTTypes.VERTICAL, "copper_window"),
+			ZINC_WINDOW = getCT(AllCTTypes.VERTICAL, "zinc_window"),
+			BRASS_WINDOW = getCT(AllCTTypes.VERTICAL, "brass_window"),
+			ROSE_QUARTZ_WINDOW = getCT(AllCTTypes.VERTICAL, "rose_quartz_window"),
+			ANDESITE_ALLOY_WINDOW = getCT(AllCTTypes.VERTICAL, "andesite_alloy_window"),
+			INDUSTRIAL_IRON_WINDOW = getCT(AllCTTypes.VERTICAL, "industrial_iron_window");
 
-    private static CTSpriteShiftEntry omni(String name) {
-        return getCT(AllCTTypes.OMNIDIRECTIONAL, name, name);
-    }
+	public static CTSpriteShiftEntry omni(String name) {
+		return getCT(AllCTTypes.OMNIDIRECTIONAL, name);
+	}
 
-    private static CTSpriteShiftEntry horizontal(String name) {
-        return getCT(AllCTTypes.HORIZONTAL_KRYPPERS, name, "horizontal_" + name);
-    }
+	public static CTSpriteShiftEntry horizontal(String name) {
+		return getCT(AllCTTypes.HORIZONTAL_KRYPPERS, name, "horizontal_" + name);
+	}
 
-    private static CTSpriteShiftEntry vertical(String name) {
-        return getCT(AllCTTypes.VERTICAL, name, "vertical_" + name);
-    }
+	public static CTSpriteShiftEntry vertical(String name) {
+		return getCT(AllCTTypes.VERTICAL, name, "vertical_" + name);
+	}
 
-    private static CTSpriteShiftEntry getCT(CTType type, String blockTextureName, String connectedTextureName) {
-        return CTSpriteShifter.getCT(type, CreateFramedMod.asResource("block/" + blockTextureName), CreateFramedMod.asResource("block/" + connectedTextureName + "_connected"));
-    }
+	public static CTSpriteShiftEntry getCT(CTType type, String blockTextureName, String connectedTextureName) {
+		return CTSpriteShifter.getCT(type, CreateFramedMod.asResource("block/" + blockTextureName), CreateFramedMod.asResource("block/" + connectedTextureName + "_connected"));
+	}
 
-    private static CTSpriteShiftEntry getCT(CTType type, String blockTextureName) {
-        return getCT(type, blockTextureName, blockTextureName);
-    }
+	public static CTSpriteShiftEntry getCT(CTType type, String blockTextureName) {
+		return getCT(type, blockTextureName, blockTextureName);
+	}
 }

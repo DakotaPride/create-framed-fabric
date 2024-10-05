@@ -1,0 +1,7 @@
+{
+  "variants": {
+    "": {
+      "model": "createframed:block/copper_window"
+    }
+  }
+}
