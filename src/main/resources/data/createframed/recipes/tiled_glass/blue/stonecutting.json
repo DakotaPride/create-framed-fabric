@@ -1,8 +1,0 @@
-{
-  "type": "minecraft:stonecutting",
-  "count": 1,
-  "ingredient": {
-    "tag": "c:glass/blue"
-  },
-  "result": "createframed:blue_stained_tiled_glass"
-}
