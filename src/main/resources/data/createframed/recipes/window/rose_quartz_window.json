@@ -6,7 +6,7 @@
       "item": "create:polished_rose_quartz"
     },
     "X": {
-      "tag": "forge:glass/colorless"
+      "tag": "c:colorless_glass"
     }
   },
   "pattern": [
