@@ -1,10 +1,9 @@
 package net.dakotapride.createframed.registry;
 
-import static com.simibubi.create.AllInteractionBehaviours.interactionBehaviour;
-import static com.simibubi.create.AllMovementBehaviours.movementBehaviour;
+import static com.simibubi.create.api.behaviour.interaction.MovingInteractionBehaviour.interactionBehaviour;
+import static com.simibubi.create.api.behaviour.movement.MovementBehaviour.movementBehaviour;
 import static com.simibubi.create.foundation.data.CreateRegistrate.connectedTextures;
 
-import java.util.function.Function;
 import java.util.function.Supplier;
 
 import com.simibubi.create.AllBlocks;
@@ -23,15 +22,11 @@ import com.simibubi.create.foundation.data.BuilderTransformers;
 import com.simibubi.create.foundation.data.CreateRegistrate;
 import com.simibubi.create.foundation.data.SharedProperties;
 import com.tterrag.registrate.builders.BlockBuilder;
-import com.tterrag.registrate.providers.DataGenContext;
-import com.tterrag.registrate.providers.RegistrateBlockstateProvider;
 import com.tterrag.registrate.util.entry.BlockEntry;
-import com.tterrag.registrate.util.nullness.NonNullBiConsumer;
 import com.tterrag.registrate.util.nullness.NonNullConsumer;
 import com.tterrag.registrate.util.nullness.NonNullFunction;
 import com.tterrag.registrate.util.nullness.NonNullUnaryOperator;
 
-import io.github.fabricators_of_create.porting_lib.models.generators.ModelFile;
 import net.dakotapride.createframed.CreateFramedMod;
 import net.dakotapride.createframed.block.TintedConnectedGlassBlock;
 import net.dakotapride.createframed.block.TintedConnectedGlassPaneBlock;
@@ -44,7 +39,6 @@ import net.dakotapride.createframed.block.door.FramedGlassSlidingDoorBlock;
 import net.dakotapride.createframed.block.door.TintedFramedGlassSlidingDoorBlock;
 import net.minecraft.client.renderer.RenderType;
 import net.minecraft.core.BlockPos;
-import net.minecraft.resources.ResourceLocation;
 import net.minecraft.world.entity.EntityType;
 import net.minecraft.world.level.BlockGetter;
 import net.minecraft.world.level.block.Block;
@@ -215,7 +209,7 @@ public class CreateFramedBuilderTransformers {
     }
 
     public static BlockEntry<TrainTrapdoorBlock> framedGlassTrapdoor(String name, MapColor colour, CTSpriteShiftEntry spriteShiftEntry) {
-		return REGISTRATE.block(name + "_stained_framed_glass_trapdoor", TrainTrapdoorBlock::new)
+		return REGISTRATE.block(name + "_stained_framed_glass_trapdoor", TrainTrapdoorBlock::glass)
                 .initialProperties(SharedProperties::softMetal)
                 .transform(BuilderTransformers.trapdoor(false))
                 .properties(p -> p.sound(SoundType.GLASS).noOcclusion().mapColor(colour))

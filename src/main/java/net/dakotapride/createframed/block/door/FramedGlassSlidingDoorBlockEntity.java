@@ -1,8 +1,8 @@
 package net.dakotapride.createframed.block.door;
 
 import com.simibubi.create.content.decoration.slidingDoor.SlidingDoorBlockEntity;
-import com.simibubi.create.foundation.utility.animation.LerpedFloat;
 
+import net.createmod.catnip.animation.LerpedFloat;
 import net.minecraft.core.BlockPos;
 import net.minecraft.world.level.block.entity.BlockEntityType;
 import net.minecraft.world.level.block.state.BlockState;

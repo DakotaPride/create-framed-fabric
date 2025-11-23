@@ -1,0 +1,6 @@
+{
+  "parent": "minecraft:block/cube_all",
+  "textures": {
+    "all": "createframed:block/alexscaves/framed_radon_lamp_white"
+  }
+}

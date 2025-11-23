@@ -3,19 +3,20 @@ package net.dakotapride.createframed.block.behaviour;
 import java.lang.ref.WeakReference;
 import java.util.Map;
 
+import com.simibubi.create.api.behaviour.movement.MovementBehaviour;
 import com.simibubi.create.content.contraptions.Contraption;
-import com.simibubi.create.content.contraptions.behaviour.MovementBehaviour;
 import com.simibubi.create.content.contraptions.behaviour.MovementContext;
 import com.simibubi.create.content.contraptions.elevator.ElevatorColumn;
 import com.simibubi.create.content.contraptions.elevator.ElevatorContraption;
 import com.simibubi.create.content.decoration.slidingDoor.DoorControl;
 import com.simibubi.create.content.decoration.slidingDoor.DoorControlBehaviour;
+import com.simibubi.create.content.decoration.slidingDoor.SlidingDoorBlockEntity;
 import com.simibubi.create.content.trains.entity.Carriage;
 import com.simibubi.create.content.trains.entity.CarriageContraptionEntity;
 import com.simibubi.create.content.trains.station.GlobalStation;
 import com.simibubi.create.foundation.blockEntity.behaviour.BlockEntityBehaviour;
-import com.simibubi.create.foundation.utility.animation.LerpedFloat;
 
+import net.createmod.catnip.animation.LerpedFloat;
 import net.dakotapride.createframed.block.door.FramedGlassSlidingDoorBlockEntity;
 import net.minecraft.core.BlockPos;
 import net.minecraft.core.Direction;
@@ -34,10 +35,10 @@ import net.minecraft.world.phys.Vec3;
 
 public class FramedSlidingDoorMovementBehaviour implements MovementBehaviour {
 
-    @Override
-    public boolean renderAsNormalBlockEntity() {
-        return true;
-    }
+//    @Override
+//    public boolean renderAsNormalBlockEntity() {
+//        return true;
+//    }
 
     @Override
     public boolean mustTickWhileDisabled() {
@@ -55,8 +56,7 @@ public class FramedSlidingDoorMovementBehaviour implements MovementBehaviour {
         if (!context.world.isClientSide())
             tickOpen(context, open);
 
-        Map<BlockPos, BlockEntity> tes = context.contraption.presentBlockEntities;
-        if (!(tes.get(context.localPos) instanceof FramedGlassSlidingDoorBlockEntity sdbe))
+        if (!(context.contraption.getBlockEntityClientSide(context.localPos) instanceof FramedGlassSlidingDoorBlockEntity sdbe))
             return;
         boolean wasSettled = sdbe.animation.settled();
         sdbe.animation.chase(open ? 1 : 0, .15f, LerpedFloat.Chaser.LINEAR);
