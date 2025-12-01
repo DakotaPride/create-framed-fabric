@@ -6,7 +6,7 @@
       "item": "createframed:brown_cardboard_block"
     },
     {
-      "item": "minecraft:string"
+      "tag": "c:string"
     }
   ],
   "result": {
