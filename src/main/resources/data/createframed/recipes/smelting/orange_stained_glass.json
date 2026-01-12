@@ -6,7 +6,5 @@
   "ingredient": {
     "tag": "createframed:orange/glass"
   },
-  "result": {
-    "item": "minecraft:orange_stained_glass"
-  }
+  "result": "minecraft:orange_stained_glass"
 }

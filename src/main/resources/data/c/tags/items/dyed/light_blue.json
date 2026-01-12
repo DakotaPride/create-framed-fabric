@@ -8,10 +8,6 @@
     "createframed:light_blue_cardboard_block",
     "createframed:bound_light_blue_cardboard_block",
     "createframed:light_blue_cardboard_window",
-    "createframed:light_blue_cardboard_window_pane",
-    {
-      "require": false,
-      "id": "createframed:framed_radon_lamp_light_blue"
-    }
+    "createframed:light_blue_cardboard_window_pane"
   ]
 }

@@ -35,7 +35,6 @@
     "#createframed:white/pane",
     "#createframed:brown/pane",
     "#createframed:tinted/pane",
-    "#createframed:framed_radon_glass",
     "createframed:copper_window",
     "createframed:zinc_window",
     "createframed:andesite_alloy_window",

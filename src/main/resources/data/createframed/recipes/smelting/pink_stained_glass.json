@@ -6,7 +6,5 @@
   "ingredient": {
     "tag": "createframed:pink/glass"
   },
-  "result": {
-    "item": "minecraft:pink_stained_glass"
-  }
+  "result": "minecraft:pink_stained_glass"
 }

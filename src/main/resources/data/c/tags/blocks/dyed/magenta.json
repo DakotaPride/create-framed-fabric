@@ -8,10 +8,6 @@
     "createframed:magenta_cardboard_block",
     "createframed:bound_magenta_cardboard_block",
     "createframed:magenta_cardboard_window",
-    "createframed:magenta_cardboard_window_pane",
-    {
-      "require": false,
-      "id": "createframed:framed_radon_lamp_magenta"
-    }
+    "createframed:magenta_cardboard_window_pane"
   ]
 }

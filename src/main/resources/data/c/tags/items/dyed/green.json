@@ -8,10 +8,6 @@
     "createframed:green_cardboard_block",
     "createframed:bound_green_cardboard_block",
     "createframed:green_cardboard_window",
-    "createframed:green_cardboard_window_pane",
-    {
-      "require": false,
-      "id": "createframed:framed_radon_lamp_green"
-    }
+    "createframed:green_cardboard_window_pane"
   ]
 }

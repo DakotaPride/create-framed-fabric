@@ -9,25 +9,25 @@ import net.dakotapride.createframed.CreateFramedMod;
 
 public class CreateFramedSpriteShifts {
     public static final CTSpriteShiftEntry
-        RED_STAINED_FRAMED_GLASS = omni("red_stained_framed_glass"),
-        ORANGE_STAINED_FRAMED_GLASS = omni("orange_stained_framed_glass"),
-        YELLOW_STAINED_FRAMED_GLASS = omni("yellow_stained_framed_glass"),
-        GREEN_STAINED_FRAMED_GLASS = omni("green_stained_framed_glass"),
-        LIME_STAINED_FRAMED_GLASS = omni("lime_stained_framed_glass"),
-        BLUE_STAINED_FRAMED_GLASS = omni("blue_stained_framed_glass"),
-        LIGHT_BLUE_STAINED_FRAMED_GLASS = omni("light_blue_stained_framed_glass"),
-        CYAN_STAINED_FRAMED_GLASS = omni("cyan_stained_framed_glass"),
-        PURPLE_STAINED_FRAMED_GLASS = omni("purple_stained_framed_glass"),
-        MAGENTA_STAINED_FRAMED_GLASS = omni("magenta_stained_framed_glass"),
-        PINK_STAINED_FRAMED_GLASS = omni("pink_stained_framed_glass"),
-        BLACK_STAINED_FRAMED_GLASS = omni("black_stained_framed_glass"),
-        GRAY_STAINED_FRAMED_GLASS = omni("gray_stained_framed_glass"),
-        LIGHT_GRAY_STAINED_FRAMED_GLASS = omni("light_gray_stained_framed_glass"),
-        WHITE_STAINED_FRAMED_GLASS = omni("white_stained_framed_glass"),
-        BROWN_STAINED_FRAMED_GLASS = omni("brown_stained_framed_glass"),
-        TINTED_FRAMED_GLASS = omni("tinted_framed_glass");
+			RED_STAINED_FRAMED_GLASS = omni("red_stained_framed_glass"),
+			ORANGE_STAINED_FRAMED_GLASS = omni("orange_stained_framed_glass"),
+			YELLOW_STAINED_FRAMED_GLASS = omni("yellow_stained_framed_glass"),
+			GREEN_STAINED_FRAMED_GLASS = omni("green_stained_framed_glass"),
+			LIME_STAINED_FRAMED_GLASS = omni("lime_stained_framed_glass"),
+        	BLUE_STAINED_FRAMED_GLASS = omni("blue_stained_framed_glass"),
+        	LIGHT_BLUE_STAINED_FRAMED_GLASS = omni("light_blue_stained_framed_glass"),
+        	CYAN_STAINED_FRAMED_GLASS = omni("cyan_stained_framed_glass"),
+        	PURPLE_STAINED_FRAMED_GLASS = omni("purple_stained_framed_glass"),
+        	MAGENTA_STAINED_FRAMED_GLASS = omni("magenta_stained_framed_glass"),
+        	PINK_STAINED_FRAMED_GLASS = omni("pink_stained_framed_glass"),
+        	BLACK_STAINED_FRAMED_GLASS = omni("black_stained_framed_glass"),
+        	GRAY_STAINED_FRAMED_GLASS = omni("gray_stained_framed_glass"),
+			LIGHT_GRAY_STAINED_FRAMED_GLASS = omni("light_gray_stained_framed_glass"),
+			WHITE_STAINED_FRAMED_GLASS = omni("white_stained_framed_glass"),
+			BROWN_STAINED_FRAMED_GLASS = omni("brown_stained_framed_glass"),
+			TINTED_FRAMED_GLASS = omni("tinted_framed_glass");
     public static final CTSpriteShiftEntry
-            HORIZONTAL_RED_STAINED_FRAMED_GLASS = horizontal("red_stained_framed_glass"),
+			HORIZONTAL_RED_STAINED_FRAMED_GLASS = horizontal("red_stained_framed_glass"),
             HORIZONTAL_ORANGE_STAINED_FRAMED_GLASS = horizontal("orange_stained_framed_glass"),
             HORIZONTAL_YELLOW_STAINED_FRAMED_GLASS = horizontal("yellow_stained_framed_glass"),
             HORIZONTAL_GREEN_STAINED_FRAMED_GLASS = horizontal("green_stained_framed_glass"),
@@ -68,7 +68,25 @@ public class CreateFramedSpriteShifts {
 			BRASS_WINDOW = getCT(AllCTTypes.VERTICAL, "brass_window"),
 			ROSE_QUARTZ_WINDOW = getCT(AllCTTypes.VERTICAL, "rose_quartz_window"),
 			ANDESITE_ALLOY_WINDOW = getCT(AllCTTypes.VERTICAL, "andesite_alloy_window"),
-			INDUSTRIAL_IRON_WINDOW = getCT(AllCTTypes.VERTICAL, "industrial_iron_window");
+			CARDBOARD_WINDOW = getCT(AllCTTypes.HORIZONTAL_KRYPPERS, "cardboard_window"),
+
+			RED_CARDBOARD_WINDOW = getCT(AllCTTypes.HORIZONTAL_KRYPPERS, "red_cardboard_window"),
+			ORANGE_CARDBOARD_WINDOW = getCT(AllCTTypes.HORIZONTAL_KRYPPERS, "orange_cardboard_window"),
+			YELLOW_CARDBOARD_WINDOW = getCT(AllCTTypes.HORIZONTAL_KRYPPERS, "yellow_cardboard_window"),
+			GREEN_CARDBOARD_WINDOW = getCT(AllCTTypes.HORIZONTAL_KRYPPERS, "green_cardboard_window"),
+			LIME_CARDBOARD_WINDOW = getCT(AllCTTypes.HORIZONTAL_KRYPPERS, "lime_cardboard_window"),
+			BLUE_CARDBOARD_WINDOW = getCT(AllCTTypes.HORIZONTAL_KRYPPERS, "blue_cardboard_window"),
+			LIGHT_BLUE_CARDBOARD_WINDOW = getCT(AllCTTypes.HORIZONTAL_KRYPPERS, "light_blue_cardboard_window"),
+			CYAN_CARDBOARD_WINDOW = getCT(AllCTTypes.HORIZONTAL_KRYPPERS, "cyan_cardboard_window"),
+			PURPLE_CARDBOARD_WINDOW = getCT(AllCTTypes.HORIZONTAL_KRYPPERS, "purple_cardboard_window"),
+			MAGENTA_CARDBOARD_WINDOW = getCT(AllCTTypes.HORIZONTAL_KRYPPERS, "magenta_cardboard_window"),
+			PINK_CARDBOARD_WINDOW = getCT(AllCTTypes.HORIZONTAL_KRYPPERS, "pink_cardboard_window"),
+			BLACK_CARDBOARD_WINDOW = getCT(AllCTTypes.HORIZONTAL_KRYPPERS, "black_cardboard_window"),
+			GRAY_CARDBOARD_WINDOW = getCT(AllCTTypes.HORIZONTAL_KRYPPERS, "gray_cardboard_window"),
+			LIGHT_GRAY_CARDBOARD_WINDOW = getCT(AllCTTypes.HORIZONTAL_KRYPPERS, "light_gray_cardboard_window"),
+			WHITE_CARDBOARD_WINDOW = getCT(AllCTTypes.HORIZONTAL_KRYPPERS, "white_cardboard_window"),
+			BROWN_CARDBOARD_WINDOW = getCT(AllCTTypes.HORIZONTAL_KRYPPERS, "brown_cardboard_window");
+			//INDUSTRIAL_IRON_WINDOW = getCT(AllCTTypes.VERTICAL, "industrial_iron_window");
 
 	public static CTSpriteShiftEntry omni(String name) {
 		return getCT(AllCTTypes.OMNIDIRECTIONAL, name);

@@ -8,10 +8,6 @@
     "createframed:pink_cardboard_block",
     "createframed:bound_pink_cardboard_block",
     "createframed:pink_cardboard_window",
-    "createframed:pink_cardboard_window_pane",
-    {
-      "require": false,
-      "id": "createframed:framed_radon_lamp_pink"
-    }
+    "createframed:pink_cardboard_window_pane"
   ]
 }

@@ -8,10 +8,6 @@
     "createframed:white_cardboard_block",
     "createframed:bound_white_cardboard_block",
     "createframed:white_cardboard_window",
-    "createframed:white_cardboard_window_pane",
-    {
-      "require": false,
-      "id": "createframed:framed_radon_lamp_white"
-    }
+    "createframed:white_cardboard_window_pane"
   ]
 }

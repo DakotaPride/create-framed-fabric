@@ -8,10 +8,6 @@
     "createframed:yellow_cardboard_block",
     "createframed:bound_yellow_cardboard_block",
     "createframed:yellow_cardboard_window",
-    "createframed:yellow_cardboard_window_pane",
-    {
-      "require": false,
-      "id": "createframed:framed_radon_lamp_yellow"
-    }
+    "createframed:yellow_cardboard_window_pane"
   ]
 }
