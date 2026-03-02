@@ -5,6 +5,7 @@ import static net.dakotapride.createframed.CreateFramedMod.REGISTRATE;
 import java.util.Locale;
 
 import com.simibubi.create.AllPartialModels;
+import com.simibubi.create.Create;
 import com.simibubi.create.content.logistics.box.PackageItem;
 import com.simibubi.create.content.logistics.box.PackageStyles;
 import com.tterrag.registrate.util.entry.ItemEntry;
@@ -47,6 +48,8 @@ public class CreateFramedPackageStyles {
         public boolean rare;
 
         Items(int w, int h, float o, boolean r) {
+			width = w;
+			height = h;
             String name = name().toLowerCase(Locale.ROOT);
             package_item = REGISTRATE.get()
                     .item(name + "_package", prop -> new PackageItem(prop,
@@ -56,10 +59,12 @@ public class CreateFramedPackageStyles {
         }
 
         Items() {
+			width = 10;
+			height = 8;
             String name = name().toLowerCase(Locale.ROOT);
             package_item = REGISTRATE.get()
                     .item(name + "_package", prop -> new PackageItem(prop,
-                            new PackageStyles.PackageStyle(name, 10, 8, 18, true)))
+                            new PackageStyles.PackageStyle(name, width, height, 18, true)))
                     .properties(prop -> prop.stacksTo(1))
                     .register();
         }
@@ -72,18 +77,16 @@ public class CreateFramedPackageStyles {
             return name().toLowerCase(Locale.ROOT);
         }
 
-        public static void register() {
-            CreateFramedPackageStyles.register();
-        }
+        public static void register() {}
     }
 
     public static void register() {
         for (Items items : Items.values())
-            registerPackageModel(items.getPackageItem().getId(), CreateFramedMod.asResource(items.getName()), items.width, items.height);
+            registerPackageModel(items.getPackageItem().getId(), items.width, items.height);
     }
 
-    public static void registerPackageModel(ResourceLocation id, ResourceLocation id2, int width, int height) {
-        AllPartialModels.PACKAGES.put(id, PartialModel.of(id2.withPrefix("item/package/")));
-        AllPartialModels.PACKAGE_RIGGING.put(id, PartialModel.of(id2.withPrefix("item/package/rigging/")));
-    }
+	public static void registerPackageModel(ResourceLocation id, int width, int height) {
+		AllPartialModels.PACKAGES.put(id, PartialModel.of(id.withPrefix("item/")));
+		AllPartialModels.PACKAGE_RIGGING.put(id, PartialModel.of(Create.asResource("item/package/rigging_" + width + "x" + height)));
+	}
 }

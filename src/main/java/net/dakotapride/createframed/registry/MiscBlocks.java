@@ -6,6 +6,7 @@ import net.dakotapride.createframed.block.KarpboardBlock;
 import net.dakotapride.createframed.item.KarpboardBlockItem;
 import net.fabricmc.fabric.api.registry.FlammableBlockRegistry;
 import net.fabricmc.fabric.api.registry.FuelRegistry;
+import net.minecraft.world.level.block.Block;
 import net.minecraft.world.level.block.Blocks;
 import net.minecraft.world.level.block.SoundType;
 import net.minecraft.world.level.material.MapColor;
@@ -36,6 +37,10 @@ public class MiscBlocks {
 			.onRegister(item -> FuelRegistry.INSTANCE.add(item, 8000))
             .build()
             .register();
+	public static BlockEntry<Block> PULP_BLOCK = REGISTRATE.get().block("pulp_block", Block::new)
+			.initialProperties(() -> Blocks.MOSS_BLOCK)
+			.properties(p -> p.mapColor(MapColor.COLOR_LIGHT_GRAY))
+			.simpleItem().register();
 
     public static void register() {}
 }

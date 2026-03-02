@@ -69,6 +69,9 @@ public class CreateFramedTabs {
 
 			o.accept(MiscBlocks.KARPBOARD_BLOCK.asItem());
 			o.accept(MiscBlocks.SHINY_KARPBOARD_BLOCK.asItem());
+
+			o.accept(MiscBlocks.PULP_BLOCK.asItem());
+
 			for (CreateFramedPackageStyles.Items items : CreateFramedPackageStyles.Items.values())
 				o.accept(items.getPackageItem());
         }

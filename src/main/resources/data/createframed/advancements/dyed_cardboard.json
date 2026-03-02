@@ -7,14 +7,15 @@
       "translate": "advancement.createframed.dyed_cardboard_block.title"
     },
     "description": {
+      "color": "#DBA213",
       "translate": "advancement.createframed.dyed_cardboard_block.description"
     },
     "frame": "task",
     "show_toast": true,
-    "announce_to_chat": false,
+    "announce_to_chat": true,
     "hidden": true
   },
-  "parent": "create:cardboard",
+  "parent": "createframed:pulp_block",
   "criteria": {
     "has_dyed_cardboard_block": {
       "conditions": {

@@ -16,6 +16,9 @@
   "entrypoints": {
     "main": [
       "net.dakotapride.createframed.CreateFramedMod"
+    ],
+    "client": [
+      "net.dakotapride.createframed.CreateFramedModClient"
     ]
   },
   "mixins": [
